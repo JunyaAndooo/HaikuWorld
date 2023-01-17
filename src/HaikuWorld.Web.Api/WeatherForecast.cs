@@ -1,4 +1,4 @@
-namespace HaikuWorld.Api;
+namespace HaikuWorld.Web.Api;
 
 public class WeatherForecast
 {
