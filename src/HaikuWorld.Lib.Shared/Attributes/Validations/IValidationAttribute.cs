@@ -1,8 +1,8 @@
-﻿namespace HaikuWorld.Lib.Shared.Attributes.Validations
+﻿namespace HaikuWorld.Lib.Shared.Attributes.Validations;
+
+public interface IValidationAttribute<T>
+        where T : notnull
 {
-    public interface IValidationAttribute<T> where T : notnull
-    {
-        string ErrorMessage { get; }
-        bool IsValid(T tvalue);
-    }
+    string ErrorMessage { get; }
+    bool IsValid(T tvalue);
 }

@@ -1,4 +1,3 @@
-﻿namespace HaikuWorld.Web.Api.Models.News
-{
-    public record NewsResult();
-}
+﻿namespace HaikuWorld.Web.Api.Models.News;
+
+public record NewsResult();

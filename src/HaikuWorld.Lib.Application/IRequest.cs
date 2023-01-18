@@ -1,4 +1,3 @@
-﻿namespace HaikuWorld.Lib.Application
-{
-    internal interface IRequest { }
-}
+﻿namespace HaikuWorld.Lib.Application;
+
+internal interface IRequest { }
