@@ -17,10 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HaikuWorld.Web.Api", "src\H
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HaikuWorld.Lib.Query", "src\HaikuWorld.Lib.Query\HaikuWorld.Lib.Query.csproj", "{963FC75E-4F34-4E2C-B931-E93A45C3F5F8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{87AEB012-A3F3-4A00-AA53-D48FA38AA4FF}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaikuWorld.Test.Unit", "src\HaikuWorld.Test.Unit\HaikuWorld.Test.Unit.csproj", "{515C3E2D-975D-4E85-910C-096EC9195EBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +49,10 @@ Global
 		{963FC75E-4F34-4E2C-B931-E93A45C3F5F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{963FC75E-4F34-4E2C-B931-E93A45C3F5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{963FC75E-4F34-4E2C-B931-E93A45C3F5F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515C3E2D-975D-4E85-910C-096EC9195EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515C3E2D-975D-4E85-910C-096EC9195EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515C3E2D-975D-4E85-910C-096EC9195EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515C3E2D-975D-4E85-910C-096EC9195EBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +64,7 @@ Global
 		{5297AAD0-4EEC-403E-98A0-6FDD4FF16405} = {06FEA316-AACA-4FCA-AC74-E175C28045A3}
 		{17AB4E03-62F6-4077-8C6C-6A5BC0A45037} = {06FEA316-AACA-4FCA-AC74-E175C28045A3}
 		{963FC75E-4F34-4E2C-B931-E93A45C3F5F8} = {06FEA316-AACA-4FCA-AC74-E175C28045A3}
+		{515C3E2D-975D-4E85-910C-096EC9195EBA} = {06FEA316-AACA-4FCA-AC74-E175C28045A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83B08485-6557-44E2-975B-D93698A4B45C}

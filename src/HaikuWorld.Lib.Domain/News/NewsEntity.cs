@@ -8,7 +8,7 @@ public sealed record NewsEntity
     {
         if (ReleaseTime > CloseTime)
         {
-            //throw new ArgumentInvalidException<NewsEntity>($"公開日時と終了日時の指定が正しくありません。 公開日時：{ReleaseTime}, 終了日時：{CloseTime}");
+            throw new Exception($"公開日時と終了日時の指定が正しくありません。 公開日時：{ReleaseTime}, 終了日時：{CloseTime}");
         }
 
         (NewsId, Title, Body, CreatedAt, UpdatedAt, Enabled, ReleaseTime, CloseTime) = (newsId, title, body, createdAt, updatedAt, enabled, releaseTime, closeTime);

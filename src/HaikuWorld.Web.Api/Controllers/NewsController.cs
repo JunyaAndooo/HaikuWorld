@@ -6,15 +6,14 @@ namespace HaikuWorld.Web.Api.Controllers;
 [Route("[controller]")]
 public class NewsController : ControllerBase
 {
-    private readonly NewsListApplicationService getNewsApplicationService;
+    //private readonly NewsListApplicationService getNewsApplicationService;
 
-    public NewsController(NewsListApplicationService getNewsApplicationService)
+    public NewsController()
     {
-        this.getNewsApplicationService = getNewsApplicationService;
     }
 
     [HttpGet]
-    public async Task<ActionResult<List<NewsResult>>> News()
+    public async Task<ActionResult> News()
     {
 
 

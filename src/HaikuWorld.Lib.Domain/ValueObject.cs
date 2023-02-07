@@ -3,16 +3,25 @@ using System.Reflection;
 
 namespace HaikuWorld.Lib.Domain;
 
-public abstract record ValueObject<T> where T : notnull
+public abstract record ValueObject<T>
+        where T : notnull
 {
-    protected ValueObject(T value)
+    protected ValueObject(T tvalue)
+    {
+        IsValid(tvalue);
+        Value = tvalue;
+    }
+
+    public T Value { get; }
+
+    public bool IsValid(T tvalue)
     {
         var attrs = typeof(T).GetCustomAttributes();
         foreach (var attr in attrs)
         {
             if (attr is IValidationAttribute<T> valid)
             {
-                if (!valid.IsValid(value))
+                if (!valid.IsValid(tvalue))
                 {
                     // TODO ここの第一引数は、ValueObjectを継承したもの
                     //throw new ArgumentInvalidException<T, typeof(attr), T>($"{valid.ErrorMessage} 実際の値：'{value}'");
@@ -20,8 +29,6 @@ public abstract record ValueObject<T> where T : notnull
             }
         }
 
-        Value = value;
+        return false;
     }
-
-    public T Value { get; }
 }
